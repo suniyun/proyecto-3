@@ -1,0 +1,90 @@
+@import url(main.css);
+@import url(footer.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: verdana;
+    background: #e9e9e9;
+}
+
+.contenedor{
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header{
+    padding: 20px;
+    background: #2c3e50;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 50px;
+}
+
+header h1{
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+nav{
+    background: #c8392b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+}
+
+nav a{
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a:hover{
+    background: #e74c3c;
+}
+
+@media (max-width:950px){
+    header .title{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    nav{
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width:480px){
+    nav a{
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+    nav a:last-child{
+        border: none;
+    }
+}
+

@@ -1,0 +1,49 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    flex: 0 0 70%;
+}
+
+section article{
+    margin: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+section article:last-child{
+    border: none;
+}
+
+aside{
+    flex: 0 0 300px;
+    background: #e67e22;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+aside .imagen{
+    width: 250px;
+    height: 150px;
+    background: #d35400;
+    margin: 10px auto;
+}
+
+@media (max-width:800px){
+    section{
+        flex: 0 0 100%;
+    }
+    aside{
+        flex: 0 0 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    aside .imagen{
+        margin: 10px;
+    }
+}
